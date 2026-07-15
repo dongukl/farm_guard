@@ -44,7 +44,11 @@
 
 ## 시연 영상
 
-전체 시스템 동작 시연: [`images/total.mp4`](images/total.mp4)
+전체 시스템 동작 시연:
+
+<video src="https://github.com/dongukl/farm_guard/raw/main/images/total.mp4" controls width="720"></video>
+
+바로 재생이 안 되면 [원본 파일 보기](images/total.mp4)를 클릭하세요.
 
 ## 시스템 아키텍처
 
