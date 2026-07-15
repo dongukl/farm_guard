@@ -1,0 +1,375 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="System Architecture" id="vSsgOuoYkb1ciaoV1u8S">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9UDAq9aMvvITUT-thg7I-59" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=16;verticalAlign=top;spacingTop=12;" value="사용자 / 브라우저" vertex="1">
+          <mxGeometry height="1400" width="260" x="3411.517857142858" y="3974.2857142857147" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-60" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=16;verticalAlign=top;spacingTop=12;" value="프론트엔드 워크플로우" vertex="1">
+          <mxGeometry height="1400" width="950" x="3711.517857142858" y="3974.2857142857147" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-61" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=16;verticalAlign=top;spacingTop=12;" value="백엔드 / 상태 처리" vertex="1">
+          <mxGeometry height="1400" width="660" x="4701.517857142858" y="3974.2857142857147" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-62" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=16;verticalAlign=top;spacingTop=12;" value="장치 / ROS 입력" vertex="1">
+          <mxGeometry height="1400" width="420" x="5411.517857142858" y="3974.2857142857147" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-63" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=16;verticalAlign=top;spacingTop=12;" value="DB / 파일 저장소" vertex="1">
+          <mxGeometry height="1400" width="486.91" x="5851.518571428572" y="3974.287142857143" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-64" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;arcSize=12;" value="서비스 접속&lt;br&gt;브라우저에서 / 또는 /login 열기" vertex="1">
+          <mxGeometry height="76" width="210" x="3436.517857142858" y="4042.855714285715" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-65" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;arcSize=12;" value="로그인 페이지&lt;br&gt;아이디 / 비밀번호 입력&lt;br&gt;로그인 버튼으로 인증 요청" vertex="1">
+          <mxGeometry height="92" width="260" x="3796.517857142858" y="4043.855714285715" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-66" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;arcSize=12;" value="로그인 처리&lt;br&gt;입력한 계정 정보를 검증하고&lt;br&gt;성공 시 token, 실패 시 message 반환" vertex="1">
+          <mxGeometry height="92" width="260" x="4901.517857142858" y="4041.855714285715" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-67" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=13;" value="로그인 성공?" vertex="1">
+          <mxGeometry height="100" width="130" x="4131.517857142858" y="4139.285714285715" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-68" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;arcSize=12;" value="로그인 실패 안내&lt;br&gt;invalid credentials 메시지 표시&lt;br&gt;입력값 수정 후 재시도" vertex="1">
+          <mxGeometry height="92" width="260" x="3796.517857142858" y="4235.855714285715" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-69" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;arcSize=12;" value="지자체 관리 화면&lt;br&gt;기본 진입 경로: /dashboard&lt;div&gt;1초 폴링으로 live snapshot 조회&lt;br&gt;웹캠 감지 / AMR 상태 카드 표시&lt;/div&gt;" vertex="1">
+          <mxGeometry height="118" width="340" x="3801.517857142858" y="4371.855714285715" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-70" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;arcSize=12;" value="사이드바&lt;br&gt;로그인 후 공통 표시&lt;div&gt;메뉴 버튼 클릭으로 각 페이지 이동&lt;br&gt;/dashboard / /cameras&lt;br&gt;/report / /saved-reports&lt;br&gt;/analytics&lt;/div&gt;" vertex="1">
+          <mxGeometry height="250" width="220" x="3751.517857142858" y="4587.285714285715" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-71" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;arcSize=12;" value="실시간 카메라 관제&lt;br&gt;/cameras&lt;div&gt;YOLO bbox 처리된 USB 웹캠 표시&lt;br&gt;페이지 진입 시 stream URL 연결&lt;/div&gt;" vertex="1">
+          <mxGeometry height="112" width="340" x="4071.517857142858" y="4584.285714285715" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-72" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;arcSize=12;" value="통합 보고서 화면&lt;br&gt;/report&lt;div&gt;1초 폴링으로 현재 report 조회&lt;br&gt;5단계 status_event 시간 / 소요 시간 표시&lt;/div&gt;" vertex="1">
+          <mxGeometry height="118" width="340" x="4071.517857142858" y="4749.285714285715" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-73" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;arcSize=12;" value="저장된 보고서 화면&lt;br&gt;/saved-reports&lt;div&gt;목록 / 상세 조회&lt;br&gt;이름 수정 / 복원 요청&lt;br&gt;저장된 사건 영상 재생&lt;br&gt;복원 후 통합 보고서로 이동&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="340" x="4071.517857142858" y="4964.285714285715" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-74" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;arcSize=12;" value="보고서 분석 화면&lt;br&gt;/analytics&lt;div&gt;저장 보고서 배열 집계&lt;br&gt;연 / 월 / 일 처리 현황&lt;br&gt;점검 필요 보고서 표시&lt;/div&gt;" vertex="1">
+          <mxGeometry height="118" width="340" x="4072.517857142858" y="5149.285714285715" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-75" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;arcSize=12;" value="상태 조회 처리&lt;br&gt;대시보드 / 보고서 폴링 요청을 받아&lt;br&gt;live state 또는 report snapshot을 조회하고&lt;br&gt;webcam / amr / report 데이터를 반환" vertex="1">
+          <mxGeometry height="110" width="270" x="4896.517857142858" y="4242.855714285715" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-76" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;arcSize=12;" value="Live state snapshot&lt;br&gt;state.webcam / state.amr / state.report&lt;div&gt;webcam.status / amr.status / battery&lt;br&gt;scenario_status / *_at timestamps&lt;/div&gt;" vertex="1">
+          <mxGeometry height="136" width="330" x="4866.517857142858" y="4479.855714285715" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-77" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;arcSize=12;" value="저장 보고서 / 영상 처리&lt;br&gt;저장 보고서 목록 / 상세를 조회하고&lt;br&gt;제목 수정과 report 복원 요청을 처리하며&lt;br&gt;video_path로 로컬 mp4 파일을 찾아 중계한다&lt;br&gt;reports[] / saved_report / restored report / video/mp4를 반환" vertex="1">
+          <mxGeometry height="172" width="340" x="5458.427857142858" y="5023.855714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-78" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;arcSize=12;" value="USB 웹캠&lt;br&gt;/dev/video* raw frame 입력&lt;br&gt;OpenCV 캡처 + YOLO bbox 처리" vertex="1">
+          <mxGeometry height="104" width="240" x="5501.517857142858" y="4556.855714285715" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-79" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;arcSize=12;" value="상태 이벤트 토픽&lt;br&gt;/status_event&lt;br&gt;std_msgs/msg/String(JSON)&lt;br&gt;robot_id / event / status / battery / timestamp&lt;br&gt;백엔드가 표준 event/state로 해석" vertex="1">
+          <mxGeometry height="150" width="320" x="5461.517857142858" y="4342.855714285715" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-80" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;arcSize=12;" value="로컬 사건 영상 저장소&lt;br&gt;backend/recordings/*.mp4&lt;br&gt;YOLO bbox 처리된 사건 영상 파일&lt;br&gt;report.video_path가 이 경로를 참조" vertex="1">
+          <mxGeometry height="124" width="280" x="5917.427857142858" y="4461.855714285715" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-81" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;arcSize=12;" value="웹캠 최신 프레임 버퍼&lt;br&gt;latest_webcam_frame&lt;br&gt;bytes / content_type&lt;br&gt;updated_at / sequence" vertex="1">
+          <mxGeometry height="118" width="320" x="4871.517857142858" y="4911.855714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-82" parent="1" style="shape=cylinder3d;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=12;" value="SQLite&lt;br&gt;backend/reports.sqlite3&lt;br&gt;table: saved_reports&lt;br&gt;title, scenario_status, video_path&lt;br&gt;event *_at fields&lt;br&gt;report_json&lt;br&gt;created_at / updated_at" vertex="1">
+          <mxGeometry height="190" width="220" x="6089.997857142857" y="4759.995714285715" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-83" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;arcSize=12;" value="도킹 완료 감지&lt;br&gt;report.dock_complete_at 확인&lt;br&gt;자동 저장 트리거 판단" vertex="1">
+          <mxGeometry height="92" width="230" x="4726.517857142858" y="5195.855714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-84" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;arcSize=12;" value="보고서 자동 저장&lt;br&gt;DOCK_COMPLETE 시 1회 저장&lt;br&gt;중복 저장 방지" vertex="1">
+          <mxGeometry height="92" width="220" x="5099.997857142857" y="5195.855714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-85" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-65" value="SPA route: /login">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3678.4285714285716" y="4072.857142857143" />
+              <mxPoint x="3678.4285714285716" y="4072.857142857143" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-86" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-66" value="POST /api/login&lt;div&gt;{ username, password }&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-87" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-67" value="{ success, token | message }">
+          <mxGeometry relative="1" x="0.3128" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="5031.428571428572" y="4188.857142857143" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-88" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-69" value="route: /dashboard">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4196.428571428572" y="4310.857142857143" />
+              <mxPoint x="4078.4285714285716" y="4310.857142857143" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-89" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-68" value="{ success: false, message }">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-90" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;dashed=1;" target="9UDAq9aMvvITUT-thg7I-65" value="credentials 재입력">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3761.4285714285716" y="4282.857142857143" />
+              <mxPoint x="3761.4285714285716" y="4102.857142857143" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-91" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-69" value="route: /dashboard">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3808.4285714285716" y="4518.857142857143" />
+              <mxPoint x="4038.4285714285716" y="4518.857142857143" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-92" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-71" value="route: /cameras">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-93" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-72" value="route: /report">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-94" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-73" value="route: /saved-reports">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3918.4285714285716" y="5029.857142857143" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-95" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-74" value="route: /analytics">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3861.4285714285716" y="5205.857142857143" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-96" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-75" value="GET /api/status">
+          <mxGeometry relative="1" x="0.2474" as="geometry">
+            <mxPoint x="1" as="offset" />
+            <Array as="points">
+              <mxPoint x="4428" y="4413" />
+              <mxPoint x="4428" y="4280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-97" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-76" value="state.webcam + state.amr + state.report">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-98" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;dashed=1;" target="9UDAq9aMvvITUT-thg7I-69" value="{ webcam, amr, report }">
+          <mxGeometry relative="1" x="0.0883" y="11" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="4461" y="4510" />
+              <mxPoint x="4461" y="4453" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-99" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-76" value="String.data JSON&lt;div&gt;{ robot_id, event, status, battery, timestamp }&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="5290" y="4380" />
+              <mxPoint x="5290" y="4523" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-100" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-118" value="GET /api/cameras/webcam/stream">
+          <mxGeometry relative="1" x="0.2341" y="-20" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="4690" y="4623" />
+              <mxPoint x="4690" y="4799" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-101" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-81" value="/dev/video* frame -&gt; annotated_frame JPEG">
+          <mxGeometry relative="1" x="-0.416" y="-40" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="5570" y="4930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-102" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-80" value="incident_*.mp4 file">
+          <mxGeometry relative="1" x="0.0603" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="5390" y="5130" />
+              <mxPoint x="5390" y="4990" />
+              <mxPoint x="5880" y="4990" />
+              <mxPoint x="5880" y="4524" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-103" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-118" value="latest_frame bytes / content_type">
+          <mxGeometry relative="1" x="0.2963" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="4988.428571428572" y="4912.857142857143" />
+              <mxPoint x="4988.428571428572" y="4912.857142857143" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-104" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;dashed=1;" target="9UDAq9aMvvITUT-thg7I-71" value="multipart/x-mixed-replace MJPEG">
+          <mxGeometry relative="1" x="0.0875" as="geometry">
+            <mxPoint x="1" as="offset" />
+            <Array as="points">
+              <mxPoint x="4928.428571428572" y="4652.857142857143" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-105" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;dashed=1;" target="9UDAq9aMvvITUT-thg7I-72" value="{ scenario_status, *_at, video_path }">
+          <mxGeometry relative="1" x="0.5272" y="-22" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="4580" y="4530" />
+              <mxPoint x="4580" y="4830" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-106" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-83" value="report.dock_complete_at">
+          <mxGeometry relative="1" x="0.1927" y="-8" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="4806.428571428572" y="4572.857142857143" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-107" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-84" value="auto-save trigger">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4948.428571428572" y="5238.857142857143" />
+              <mxPoint x="4948.428571428572" y="5238.857142857143" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-108" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-82" value="INSERT saved_reports&lt;div&gt;{ title, scenario_status, video_path, *_at, report_json, created_at, updated_at }&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.201" y="9" as="geometry">
+            <mxPoint x="1" as="offset" />
+            <Array as="points">
+              <mxPoint x="6280" y="5239" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-109" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-77" value="GET /api/reports&lt;br&gt;GET /api/reports/{id}&lt;br&gt;GET /api/reports/{id}/video&lt;br&gt;PATCH /api/reports/{id}/title&lt;br&gt;POST /api/reports/{id}/restore">
+          <mxGeometry relative="1" x="-0.6814" y="9" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="5310" y="5039" />
+              <mxPoint x="5310" y="5150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-110" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;dashed=1;" target="9UDAq9aMvvITUT-thg7I-72" value="route: /report + restoredReportTitle">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4261.517857142858" y="5015.285714285715" />
+              <mxPoint x="4261.517857142858" y="4808.285714285715" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-111" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-82" value="SELECT / UPDATE saved_reports">
+          <mxGeometry relative="1" x="-0.0576" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="6130" y="5110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-112" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;dashed=1;" target="9UDAq9aMvvITUT-thg7I-77" value="{ id, title, created_at, updated_at, report, video_path, completed_steps, video_url }">
+          <mxGeometry relative="1" x="0.0706" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="6200" y="5150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-113" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-76" value="saved_report.report payload">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="5440" y="5083" />
+              <mxPoint x="5440" y="4573" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-114" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-77" value="GET /api/reports">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4220" y="5343" />
+              <mxPoint x="5660" y="5343" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-115" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-75" value="GET /api/report">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4510" y="4790" />
+              <mxPoint x="4510" y="4320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-117" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;dashed=1;" target="9UDAq9aMvvITUT-thg7I-74" value="reports[]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="5338.428571428572" y="5322.857142857143" />
+              <mxPoint x="4438.428571428572" y="5322.857142857143" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-118" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;arcSize=12;" value="웹캠 스트림 처리&lt;br&gt;최신 YOLO JPEG 프레임을 읽어&lt;br&gt;브라우저용 MJPEG 스트림으로 변환하고&lt;br&gt;multipart 응답으로 지속 전송" vertex="1">
+          <mxGeometry height="102" width="310" x="4876.517857142858" y="4737.855714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-119" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;arcSize=12;" value="사건 영상 녹화&lt;br&gt;event=TOWER_DETECTED 시 start&lt;br&gt;annotated_frame를 VideoWriter로 mp4 저장&lt;br&gt;event=DOCK_COMPLETE 시 stop" vertex="1">
+          <mxGeometry height="104" width="330" x="4866.517857142858" y="5061.855714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-120" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-119" value="event=TOWER_DETECTED / DOCK_COMPLETE">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="5330" y="4450" />
+              <mxPoint x="5330" y="5080" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-121" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-119" value="annotated_frame (cv2 frame)">
+          <mxGeometry relative="1" x="-0.4947" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="5690" y="4960" />
+              <mxPoint x="5360" y="4960" />
+              <mxPoint x="5360" y="5110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-122" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-76" value="report.video_path">
+          <mxGeometry relative="1" x="0.0011" y="18" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="4768.428571428572" y="5113.857142857143" />
+              <mxPoint x="4768.428571428572" y="4546.857142857143" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-123" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="9UDAq9aMvvITUT-thg7I-77" value="local mp4 file">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="5950" y="5070" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9UDAq9aMvvITUT-thg7I-124" edge="1" parent="1" source="9UDAq9aMvvITUT-thg7I-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;dashed=1;" target="9UDAq9aMvvITUT-thg7I-73" value="reports[] / saved_report / video_path / video_url / { restored: true, report }">
+          <mxGeometry relative="1" x="-0.2348" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="4570" y="5180" />
+              <mxPoint x="4570" y="5081" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
